@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio - Web Developer</title>
+    <style>
+    
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #f8fafc;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animated {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 0;
+            background: linear-gradient(45deg, #1e3a8a, #2563eb);
+            color: white;
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            border: 4px solid rgba(255,255,255,0.2);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1e3a8a;
+            font-size: 2rem;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Projects */
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-links {
+            margin-top: 1rem;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact */
+        .contact-btn {
+            display: inline-block;
+            background: #14cc3c;
+            color: white!important;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            background: #1e3a8a;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="hero animated">
+        <div class="container">
+            <img src="your-photo.jpg" alt="Your Name">
+            <h1>Hi, I'm Shaheem Ullattil</h1>
+            <p>Web Developer | Open Source Contributor | Continuous Learner</p>
+        </div>
+    </section>
+
+    
+    <section class="section">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card animated">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-card animated">
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first, cross-browser compatible</p>
+                </div>
+                <div class="skill-card animated">
+                    <h3>Version Control</h3>
+                    <p>Git & GitHub for project management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #f8fafc;">
+        <div class="container">
+            <h2>My Works</h2>
+            <div class="project-card animated">
+                <h3>Project 1</h3>
+                <p>it's a my concept site a startup "MyMart"</p>
+                <div class="project-links">
+                    <a href="https://github.com/v1ctu5/project-2/" target="_blank">GitHub Repository</a>
+                    <a href="https://v1ctu5.github.io/project-2/" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card animated">
+                <h3>Project 2</h3>
+                <p>It is a instagram seller landing page</p>
+                <div class="project-links">
+                    <a href="https://github.com/v1ctu5/space_balls" target="_blank">GitHub Repository</a>
+                    <a href="https://v1ctu5.github.io/space_balls" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card animated">
+                <h3>Project 3</h3>
+                <p>This is My website  </p>
+                <div class="project-links">
+                    <a href="https://github.com/v1ctu5/shaheem" target="_blank">GitHub Repository</a>
+                    <a href="https://v1ctu5.github.io/shaheem" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card animated">
+                <h3>Project 4</h3>
+                <p>A Music composer Business card landing page </p>
+                <div class="project-links">
+                    <a href="https://github.com/v1ctu5/Zail" target="_blank">GitHub Repository</a>
+                    <a href="https://v1ctu5.github.io/Zail" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2>Let's Connect</h2>
+            <p>I'm available for freelance projects and collaborations</p>
+            <a href="https://wa.me/[your-number]" class="contact-btn animated">
+                Message on WhatsApp
+            </a>
+        </div>
+    </section>
+</body>
+</html>
